@@ -1,0 +1,19 @@
+{
+  "name": "mini-package-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anishpras/mini-package-manager.git"
+  },
+  "author": "Anish Prashun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anishpras/mini-package-manager/issues"
+  },
+  "homepage": "https://github.com/Anishpras/mini-package-manager#readme"
+}
