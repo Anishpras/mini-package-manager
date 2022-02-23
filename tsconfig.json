@@ -8,7 +8,6 @@
     "declaration": true,
     "emitBOM": false,
     "esModuleInterop": true,
-    "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "module": "esnext",
     "moduleResolution": "node",
