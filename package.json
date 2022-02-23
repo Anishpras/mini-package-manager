@@ -1,10 +1,24 @@
 {
   "name": "mini-package-manager",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A mini package manager.",
+  "main": "dist/index.js",
+  "private": false,
+  "bin": {
+    "mpm": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -p . -w",
+    "build": "tsc -p .",
+    "prepublish": "npm run build",
+    "lint": "eslint . -f=beauty --ext=.ts",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
