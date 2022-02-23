@@ -1,6 +1,6 @@
 {
   "name": "mini-package-manager",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A mini package manager.",
   "main": "dist/index.js",
   "private": false,
@@ -13,7 +13,6 @@
   "scripts": {
     "dev": "tsc -p . -w",
     "build": "tsc -p .",
-    "prepublish": "npm run build",
     "lint": "eslint . -f=beauty --ext=.ts",
     "test": "npm run lint"
   },
