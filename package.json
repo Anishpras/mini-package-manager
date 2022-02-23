@@ -1,6 +1,6 @@
 {
   "name": "mini-package-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mini package manager.",
   "main": "dist/index.js",
   "private": false,
