@@ -1,36 +1,38 @@
-import yargs from 'yargs'
-import pm from '.'
+
+import yargs from "yargs";
+import pm from ".";
 
 yargs
-  .usage('mpm <command> [args]')
+  .usage("mpm <command> [args]")
   .version()
-  .alias('v', 'version')
+  .alias("v", "version")
   .help()
-  .alias('h', 'help')
+  .alias("h", "help")
   .command(
-    'install',
-    'Install the dependencies.',
-    argv => {
-      argv.option('production', {
-        type: 'boolean',
-        description: 'Install production dependencies only.',
-      })
+    "install",
+    "Install the dependencies.",
+    (argv) => {
+      argv.option("production", {
+        type: "boolean",
+        description: "Install production dependencies only.",
+      });
 
-      argv.boolean('save-dev')
-      argv.boolean('dev')
-      argv.alias('D', 'dev')
+      argv.boolean("save-dev");
+      argv.boolean("dev");
+      argv.alias("D", "dev");
 
-      return argv
+      return argv;
     },
     pm
   )
   .command(
-    '*',
-    'Install the dependencies.',
-    argv => argv.option('production', {
-      type: 'boolean',
-      description: 'Install production dependencies only.',
-    }),
+    "*",
+    "Install the dependencies.",
+    (argv) =>
+      argv.option("production", {
+        type: "boolean",
+        description: "Install production dependencies only.",
+      }),
     pm
   )
-  .parse()
+  .parse();
